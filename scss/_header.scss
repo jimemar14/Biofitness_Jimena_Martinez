@@ -1,0 +1,55 @@
+ /*header*/
+
+ header {
+    background: linear-gradient(to top, $color-principal, $color-complementario-gradiente);
+    color: #ffffff;
+    height: auto;
+    font-size: 25px;
+  }
+  
+  .logo img {
+    height: 100%;
+    width: auto;
+    height: 100%;
+    width: auto;
+    display: inline-block;
+  }
+  
+  .flexible {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /*con bs*/
+  
+  .navbar-toggler {
+    border: 3px solid white;
+  }
+  
+  .con-margen {
+    max-width: 80%;
+  }
+  
+  div#navbarNavAltMarkup {
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav {
+    --bs-nav-link-color:rgb(255 255 255);
+    --bs-nav-link-hover-color:rgb(14 255 31);
+    --bs-nav-link-hover-font-weight:bold;
+  
+    .nav-link.active, .show > .nav-link {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+  }
+  
+  a.nav-link:hover {
+    font-weight: 700;
+  }
+  
+  .navbar-nav .nav-link.active:hover {
+    font-weight: 300;
+  }

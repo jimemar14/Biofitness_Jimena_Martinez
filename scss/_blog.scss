@@ -1,0 +1,23 @@
+ /*Blog*/
+
+ .tituloBlog {
+    color: $color-secundario;
+  }
+  
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 20px;
+  }
+  
+  .cardImg {
+    height: 300px;
+  }
+  
+  h5.card-title.tituloBlog {
+    height: 90px;
+    font-size: 30px;
+  }

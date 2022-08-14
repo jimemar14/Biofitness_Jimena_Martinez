@@ -1,0 +1,54 @@
+/*Horarios*/
+
+/*MAPS*/
+$mapActividades: (personalizado: #ffff00, kickBoxing: #ff0000, spinning: #00ff00, trainingJump: #00ffff, crossfit: #ff7f00);
+
+@each $actividad, $color in $mapActividades{
+  .#{$actividad}{
+    background-color: $color;
+  }
+}
+
+/*MAPS GET*/
+
+$propiedades: (d: inline-flex, p:10px, r: 25px, c:white, fw:bold, tt:uppercase);
+
+.botonActividades{
+  display: map-get($map: $propiedades, $key: d);
+  padding: map-get($map: $propiedades, $key: p);
+  border-radius: map-get($map: $propiedades, $key: r);
+  color: map-get($map: $propiedades, $key: c);
+  font-weight: map-get($map: $propiedades, $key: fw);
+  text-transform: map-get($map: $propiedades, $key: tt);
+}
+
+/*Extend*/
+
+.lineaHorario{
+  @extend .botonera;
+  margin:  0 5px;
+}
+
+.sinActividad{
+  @extend .botonActividades;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/*MIXIN*/
+
+@mixin listado($margen, $formato, $alineacionX, $alineacionY){
+  margin: $margen;
+  display: $formato;
+  justify-content: $alineacionY;
+  align-items: $alineacionY;
+}
+
+.reglonListado{
+  @include listado(10px 0, flex, space-between, center);
+}
+
+.dias{
+  font-size: 25px;
+  color: $color-secundario;
+}

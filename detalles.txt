@@ -1,0 +1,2 @@
+Usé SASS para la página "Actividades"
+Para el SEO, agregué meta description, meta keywords, h1 en todas las páginas, verifique por lighthouse el puntaje que tenía cada página
