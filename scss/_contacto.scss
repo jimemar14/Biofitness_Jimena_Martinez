@@ -13,6 +13,7 @@
         .parteUno{
             max-height: 50%;
             font-size: 20px;
+            margin: 25px;
 
             li a{
                 color: black;
@@ -71,3 +72,14 @@ input{
     }
   }
 }
+
+@media (max-width: 768px){
+  .opciones {
+      flex-direction: column;
+  }
+  
+  p {
+      display: inline-flex;
+      justify-content: center;
+  }}
+  
