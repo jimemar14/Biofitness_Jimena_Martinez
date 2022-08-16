@@ -3,19 +3,33 @@
 
 
 /*MAPS*/
-$mapActividades: (personalizado: #e1e121, kickBoxing: #ff0000, spinning: #00ff00, trainingJump: #00ffff, crossfit: #ff7f00);
+$mapActividades: (
+  personalizado: #e1e121,
+  kickBoxing: #ff0000,
+  spinning: #00ff00,
+  trainingJump: #00ffff,
+  crossfit: #ff7f00
+);
 
-@each $actividad, $color in $mapActividades{
-  .#{$actividad}{
+@each $actividad,
+$color in $mapActividades {
+  .#{$actividad} {
     background-color: $color;
   }
 }
 
 /*MAPS GET*/
 
-$propiedades: (d: inline-flex, p:10px, r: 25px, c:white, fw:bold, tt:uppercase);
+$propiedades: (
+  d: inline-flex,
+  p:10px,
+  r: 25px,
+  c:white,
+  fw:bold,
+  tt:uppercase
+);
 
-.botonActividades{
+.botonActividades {
   display: map-get($map: $propiedades, $key: d);
   padding: map-get($map: $propiedades, $key: p);
   border-radius: map-get($map: $propiedades, $key: r);
@@ -26,12 +40,12 @@ $propiedades: (d: inline-flex, p:10px, r: 25px, c:white, fw:bold, tt:uppercase);
 
 /*Extend*/
 
-.lineaHorario{
+.lineaHorario {
   @extend .botonera;
-  margin:  0 5px;
+  margin: 0 5px;
 }
 
-.sinActividad{
+.sinActividad {
   @extend .botonActividades;
   border: 1px solid #000;
   color: #000;
@@ -39,22 +53,23 @@ $propiedades: (d: inline-flex, p:10px, r: 25px, c:white, fw:bold, tt:uppercase);
 
 /*MIXIN*/
 
-@mixin listado($margen, $formato, $alineacionX, $alineacionY){
+@mixin listado($margen, $formato, $alineacionX, $alineacionY) {
   margin: $margen;
   display: $formato;
   justify-content: $alineacionY;
   align-items: $alineacionY;
 }
 
-.reglonListado{
+.reglonListado {
   @include listado(10px 0, flex, space-between, center);
 }
 
-.dias{
+.dias {
   font-size: 25px;
   color: $color-secundario;
   font-weight: 900;
 }
-.accordion-button:not(.collapsed){
-  color: #541fc4;}
-  
+
+.accordion-button:not(.collapsed) {
+  color: #541fc4;
+}
