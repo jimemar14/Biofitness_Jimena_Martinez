@@ -76,4 +76,5 @@ $propiedades: (
 .accordion-button:not(.collapsed) {
   background-color: $color-principal; 
   color: $color-secundario;
+  transition: all 1s;
 }

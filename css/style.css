@@ -470,4 +470,5 @@ input {
 
 .accordion-button:not(.collapsed) {
   background-color: #5e17eb;
-  color: #0eff1f; }
+  color: #0eff1f;
+  transition: all 1s; }
