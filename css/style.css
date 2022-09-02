@@ -59,10 +59,10 @@ h5 {
   padding: 5px 15%;
   margin: 0;
   text-transform: uppercase;
-  font-size: 70px; }
+  font-size: 5rem; }
   .tituloBanner span {
     color: #0eff1f;
-    font-size: 70px; }
+    font-size: 5rem; }
 
 .descripcionH1 {
   background-color: white;
@@ -85,6 +85,15 @@ p.card-text {
     margin-left: 25%;
     font-size: 1rem; } }
 
+@media (max-width: 540px) {
+  .tituloBanner {
+    font-size: 3rem; }
+    .tituloBanner span {
+      font-size: 3rem; }
+  .descripcionH1 {
+    margin-left: 25%;
+    font-size: 1rem; } }
+
 /*main index*/
 .mainIndex {
   padding: 50px;
@@ -96,7 +105,8 @@ p.card-text {
 .tituloCaja {
   display: block;
   border-bottom: 1px solid black;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  min-height: 127px; }
 
 .caja p {
   margin: 40px auto;
@@ -118,7 +128,7 @@ p.card-text {
 .price {
   position: absolute;
   justify-content: center;
-  top: 13%;
+  top: 18%;
   right: 24%;
   background-color: #0eff1f;
   display: inline;
@@ -127,6 +137,22 @@ p.card-text {
   font-size: 20px;
   color: #ffffff !important; }
 
+/*
+@media (max-width: 440px){
+  .price {
+    top: 18%;
+    right: 24%;
+  }
+  }
+
+ 
+@media (max-width: 380px){
+  .price {
+  top: 14%;
+  right: 16%;
+  }
+  }
+*/
 p.card-text {
   margin-top: 35px; }
 

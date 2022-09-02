@@ -36,11 +36,11 @@
   padding: 5px 15%;
   margin: 0;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 5rem;
 
   span {
     color: $color-secundario;
-    font-size: 70px;
+    font-size: 5rem;
   }
 }
 
@@ -60,11 +60,26 @@ p.card-text {
 
 @media (max-width: 768px) {
   .tituloBanner {
+    font-size: 4rem;
     span {
       font-size: 4rem;
     }
 
-    font-size: 4rem;
+  }
+
+  .descripcionH1 {
+    margin-left: 25%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .tituloBanner {
+    font-size: 3rem;
+    span {
+      font-size: 3rem;
+    }
+
   }
 
   .descripcionH1 {
@@ -87,6 +102,7 @@ p.card-text {
   display: block;
   border-bottom: 1px solid black;
   padding-bottom: 30px;
+  min-height: 127px;
 }
 
 .caja p {
@@ -113,7 +129,7 @@ p.card-text {
 .price {
   position: absolute;
   justify-content: center;
-  top: 13%;
+  top: 18%;
   right: 24%;
   background-color: $color-secundario;
   display: inline;
@@ -121,8 +137,22 @@ p.card-text {
   font-weight: 700;
   font-size: 20px;
   color: #ffffff !important;
-}
+} /*
+@media (max-width: 440px){
+  .price {
+    top: 18%;
+    right: 24%;
+  }
+  }
 
+ 
+@media (max-width: 380px){
+  .price {
+  top: 14%;
+  right: 16%;
+  }
+  }
+*/
 p.card-text {
   margin-top: 35px;
 }
