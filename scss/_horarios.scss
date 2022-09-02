@@ -1,6 +1,8 @@
 /*Horarios*/
 
-
+.bodyHorario{
+  margin-bottom: 30px;
+}
 
 /*MAPS*/
 $mapActividades: (
@@ -36,6 +38,7 @@ $propiedades: (
   color: map-get($map: $propiedades, $key: c);
   font-weight: map-get($map: $propiedades, $key: fw);
   text-transform: map-get($map: $propiedades, $key: tt);
+  text-align: center;
 }
 
 /*Extend*/
@@ -66,10 +69,11 @@ $propiedades: (
 
 .dias {
   font-size: 25px;
-  color: $color-secundario;
+  color: $color-principal;
   font-weight: 900;
 }
 
 .accordion-button:not(.collapsed) {
-  color: #541fc4;
+  background-color: $color-principal; 
+  color: $color-secundario;
 }
