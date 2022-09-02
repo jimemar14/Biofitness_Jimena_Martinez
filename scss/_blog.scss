@@ -1,27 +1,27 @@
- /*Blog*/
+/*Blog*/
 
- .tituloBlog {
-   color: $color-secundario;
- }
+.tituloBlog {
+  color: $color-secundario;
+}
 
- .wrap {
-   display: flex;
-   flex-wrap: wrap;
- }
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
- .card {
-   margin: 20px;
- }
+.card {
+  margin: 20px;
+}
 
- .cardImg {
-   height: 300px;
- }
+.cardImg {
+  height: 300px;
+}
 
- h5.card-title.tituloBlog {
-   height: 90px;
-   font-size: 30px;
- }
+h5.card-title.tituloBlog {
+  height: 90px;
+  font-size: 30px;
+}
 
- .col-sm-12.col-md-6.col-lg-6.col-xl-4 {
-   margin-bottom: 20px;
- }
+.col-sm-12.col-md-6.col-lg-6.col-xl-4 {
+  margin-bottom: 20px;
+}

@@ -7,14 +7,14 @@
 
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
     padding: 50px 50px 50px 50px;
     align-items: center;
 
     .parteUno {
       max-height: 50%;
       font-size: 20px;
-      margin: 25px;
+      margin: 25px 0px;
 
       li a {
         color: black;
@@ -25,10 +25,34 @@
   }
 }
 
+@media (max-width: 768px){
+.primeraSeccion{
+  .introduccion{
+    flex-direction: column;
+  }
+}
+.parteUno{
+  li{
+    font-size: 18px;
+  }
+}
+}
+
+
 
 .legend {
   font-size: 70px;
   text-transform: capitalize;
+}
+
+@media (max-width: 767px){
+.legend{
+  font-size: 50px;
+}
+}
+
+form{
+  margin-bottom: 30px;
 }
 
 label {
