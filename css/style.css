@@ -126,10 +126,7 @@ p.card-text {
     color: #ffffff !important; }
 
 .price {
-  position: absolute;
   justify-content: center;
-  top: 18%;
-  right: 24%;
   background-color: #0eff1f;
   display: inline;
   padding: 10px 25px;
@@ -137,22 +134,12 @@ p.card-text {
   font-size: 20px;
   color: #ffffff !important; }
 
-/*
-@media (max-width: 440px){
+@media (min-width: 440px) {
   .price {
+    position: absolute;
     top: 18%;
-    right: 24%;
-  }
-  }
+    right: 24%; } }
 
- 
-@media (max-width: 380px){
-  .price {
-  top: 14%;
-  right: 16%;
-  }
-  }
-*/
 p.card-text {
   margin-top: 35px; }
 
@@ -251,6 +238,10 @@ footer {
   .navegacionSecundaria ul li a {
     color: #ffffff; }
 
+@media (max-width: 767px) {
+  .itemFooter {
+    text-align: center; } }
+
 .apartadoFooter {
   margin-top: 50px; }
   .apartadoFooter ul li a {
@@ -279,6 +270,10 @@ footer {
   text-align: center;
   font-size: 20px;
   margin: 25px auto; }
+
+i {
+  margin-right: 10px;
+  font-size: 20px; }
 
 /*actividades*/
 .titulado {
