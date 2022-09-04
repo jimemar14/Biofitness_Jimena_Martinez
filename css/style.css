@@ -321,6 +321,10 @@ main {
   .right {
     text-align: left; } }
 
+@media (max-width: 600px) {
+  iframe.iframeAc {
+    width: auto; } }
+
 /*Blog*/
 .tituloBlog {
   color: #0eff1f; }
